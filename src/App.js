@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FormValidation from "./Components/FormValidation";
+import Img from "./Components/Img";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+
+    return(
+        <div>
+            <p className='desc'>Find 3D Objects, Mockups and Illustration here.</p>
+            <Img/>
+            <div className="mainarea"><FormValidation /></div>
+        </div>
+    )
 }
 
 export default App;
